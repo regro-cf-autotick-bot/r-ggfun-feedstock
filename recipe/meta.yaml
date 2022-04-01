@@ -1,4 +1,4 @@
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggfun_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggfun/ggfun_{{ version }}.tar.gz
-  sha256: b1e340a8932d2cffbbbf6070ce96c9356599e9955a2b6534fcb17e599c575783
+  sha256: 59989ed260fcc71cd95487cf3493113a2d8a47d273d9a2f3e5e842609620511b
 
 build:
   merge_build_host: true  # [win]

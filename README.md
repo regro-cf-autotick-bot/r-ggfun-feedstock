@@ -1,11 +1,11 @@
-About r-ggfun
-=============
+About r-ggfun-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggfun-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=ggfun
 
 Package license: Artistic-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggfun-feedstock/blob/main/LICENSE.txt)
 
 Summary: Useful functions to edit 'ggplot' object (e.g., setting fonts for theme and layers, adding rounded rectangle as background for each of the legends).
 

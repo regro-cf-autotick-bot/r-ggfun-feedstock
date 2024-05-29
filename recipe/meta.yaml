@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggfun_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggfun/ggfun_{{ version }}.tar.gz
-  sha256: dc741a141bf401224076c13983e3d991a1e7f5c04c908358ba65c6e1d96533c4
+  sha256: fe6c01fd68c17497f23f76dfd4e5a6edd79a6e86850b8c5054748f31527b16d3
 
 build:
   merge_build_host: true  # [win]
@@ -26,10 +26,14 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-cli
+    - r-dplyr
     - r-ggplot2
     - r-rlang
   run:
     - r-base
+    - r-cli
+    - r-dplyr
     - r-ggplot2
     - r-rlang
 

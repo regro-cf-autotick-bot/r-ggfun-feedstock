@@ -26,10 +26,14 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-cli
+    - r-dplyr
     - r-ggplot2
     - r-rlang
   run:
     - r-base
+    - r-cli
+    - r-dplyr
     - r-ggplot2
     - r-rlang
 
